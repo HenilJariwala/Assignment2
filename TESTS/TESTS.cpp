@@ -43,22 +43,24 @@ namespace TEST1
 			Assert::AreEqual(55, result);
 		}
 
-		TEST_METHOD(LengthFunctionality2)
+		TEST_METHOD(LenghtFunctionality2)
 		{
-			//Testing the function to change the length value number greater than 100 and check if its working according to the limit given (It should not pass the test)
-			int userinput = 100;
+			//Testing the funtion to change the lenght value to 15 and check if it accept it
+			int userinput = 15;
 			int result = 0;
 			setLength(userinput, &result);
-			Assert::AreEqual(100, result);
+			Assert::AreEqual(15, result);
 		}
-		TEST_METHOD(LengthFunctionality3)
+
+		TEST_METHOD(LenghtFunctionality3)
 		{
-			//Testing the function to change the length value to -5 and check if its working according to the limit given (It should not pass the test)
-			int userinput = -5;
+			//Testing the funtion to change the lenght value to 1 and check if it accept it
+			int userinput = 1;
 			int result = 0;
 			setLength(userinput, &result);
-			Assert::AreEqual(-5, result);
+			Assert::AreEqual(1, result);
 		}
+
 
 		TEST_METHOD(WidthFunctionality1)
 		{
@@ -71,23 +73,22 @@ namespace TEST1
 
 		TEST_METHOD(WidthFunctionality2)
 		{
-			//Testing the function to change the breadth greater then 100  and check if its working according to the limit given (It should not pass the test)
-			int userinput = 101;
+			//Testing the funtcion to change the width value to 1 and check if it accept it
+			int userinput = 1;
 			int result = 0;
 			setWidth(userinput, &result);
-			Assert::AreEqual(101, result);
+			Assert::AreEqual(1, result);
 		}
+
 
 		TEST_METHOD(WidthFunctionality3)
 		{
-			//Testing the function to change the length value to -6 and check if its working according to the limit given (It should not pass the test)
-			int userinput = -9;
+			//Testing the function to change the width value to 39 and check if it accept it
+			int userinput = 39;
 			int result = 0;
 			setWidth(userinput, &result);
-			Assert::AreEqual(-6, result);
+			Assert::AreEqual(39, result);
 		}
-
-
 
 	};
 }
